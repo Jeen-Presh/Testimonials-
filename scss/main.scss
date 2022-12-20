@@ -1,0 +1,128 @@
+@import 'variables';
+
+// Reset  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $ff;
+    font-size: .8125rem;
+    background-color: $clr-neutral-lgblue;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    padding: 2rem;
+    line-height: 1.4;
+}
+
+
+// Utility Classes
+.pyx {padding: 2rem;}
+
+
+.bg-violet{
+    background:$clr-primary-violet;
+    color: $clr-white;
+}
+
+.bg-dgb {
+    background:$clr-primary-dgb;
+    color: $clr-white;
+}
+
+.bg-dbb {
+    background: $clr-primary-dbb;
+    color: $clr-white;
+}
+
+.flex-group {
+    display: flex;
+    grid-gap: .1rem;
+    align-items: center;
+}
+
+.user-profile {
+   p {
+    margin-bottom: .5rem;
+   }
+}
+
+picture{
+    padding: 0;
+}
+
+.user-name {
+   font-size: 0.8125rem;
+   font-weight: $fw-medium;
+   line-height: 1;
+}
+
+.user-status{
+    font-size: $fs-300;
+    opacity: 0.5;
+    margin-top: .5rem;
+}
+
+.user-review {
+    font-size: 1.25rem;
+    line-height: 1.2;
+}
+
+.user-testimonial {
+    opacity: 0.7;
+    margin-top: 1.5rem;
+}
+
+img {
+    border-radius: 50%;
+    width: 70%;
+    padding: .15rem;
+}
+
+.quotes {
+    background-image: url("../images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: top right 10%;
+}
+
+.testimonials{
+    display: grid;
+    grid-gap: 1rem;
+
+    article {
+        border-radius: 0.5rem;
+        overflow: hidden;
+    }
+
+    #daniel-clifford{
+        img {
+            background-color: $img-bgclr;
+        }
+    }
+
+    #jonathan-walters {
+        img {
+            background-color: $clr-white;
+        }
+    }
+
+    #jeanette-harmon {
+        background:$clr-white;
+    }
+
+    #patrick-abrams {
+        img {
+            background-color: $clr-primary-violet;
+        }
+    }
+
+    #kira-whittle {
+        background:$clr-white
+    }
+
+}
+
+@import 'media';

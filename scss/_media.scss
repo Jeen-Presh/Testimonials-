@@ -1,0 +1,91 @@
+@media (min-width:600px) {
+    .testimonials {
+        grid-template-areas: 
+        "one one "
+        "two three"
+        "four four"
+        "five five";
+ 
+         #daniel-clifford {
+             grid-area: one;
+         }
+ 
+         #jonathan-walters {
+             grid-area: two;
+         }
+ 
+         #jeanette-harmon {
+             grid-area: three;
+         }
+ 
+         #patrick-abrams {
+             grid-area: four;
+         }
+ 
+         #kira-whittle {
+             grid-area: five;
+         }
+     } 
+     
+}
+
+
+@media (min-width:800px){
+    .testimonials {
+        grid-template-areas: 
+        "one one two"
+        "three four four"
+        "five five five";
+ 
+         #daniel-clifford {
+             grid-area: one;
+         }
+ 
+         #jonathan-walters {
+             grid-area: two;
+         }
+ 
+         #jeanette-harmon {
+             grid-area: three;
+         }
+ 
+         #patrick-abrams {
+             grid-area: four;
+         }
+ 
+         #kira-whittle {
+             grid-area: five;
+         }
+     } 
+     
+}
+
+
+@media (min-width:1000px){
+    .testimonials {
+        grid-template-areas: 
+        "one one two five"
+        "three four four five";
+ 
+         #daniel-clifford {
+             grid-area: one;
+         }
+ 
+         #jonathan-walters {
+             grid-area: two;
+         }
+ 
+         #jeanette-harmon {
+             grid-area: three;
+         }
+ 
+         #patrick-abrams {
+             grid-area: four;
+         }
+ 
+         #kira-whittle {
+             grid-area: five;
+         }
+     } 
+     
+}

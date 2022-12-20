@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Barlow Semi Condensed", cursive;
+  font-size: .8125rem;
+  background-color: #ecf2f8;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  padding: 2rem;
+  line-height: 1.4; }
+
+.pyx {
+  padding: 2rem; }
+
+.bg-violet {
+  background: #7541c8;
+  color: #ffffff; }
+
+.bg-dgb {
+  background: #48556a;
+  color: #ffffff; }
+
+.bg-dbb {
+  background: #19212e;
+  color: #ffffff; }
+
+.flex-group {
+  display: flex;
+  grid-gap: .1rem;
+  align-items: center; }
+
+.user-profile p {
+  margin-bottom: .5rem; }
+
+picture {
+  padding: 0; }
+
+.user-name {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1; }
+
+.user-status {
+  font-size: 0.6875rem;
+  opacity: 0.5;
+  margin-top: .5rem; }
+
+.user-review {
+  font-size: 1.25rem;
+  line-height: 1.2; }
+
+.user-testimonial {
+  opacity: 0.7;
+  margin-top: 1.5rem; }
+
+img {
+  border-radius: 50%;
+  width: 70%;
+  padding: .15rem; }
+
+.quotes {
+  background-image: url("../images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position: top right 10%; }
+
+.testimonials {
+  display: grid;
+  grid-gap: 1rem; }
+  .testimonials article {
+    border-radius: 0.5rem;
+    overflow: hidden; }
+  .testimonials #daniel-clifford img {
+    background-color: #a58ccd; }
+  .testimonials #jonathan-walters img {
+    background-color: #ffffff; }
+  .testimonials #jeanette-harmon {
+    background: #ffffff; }
+  .testimonials #patrick-abrams img {
+    background-color: #7541c8; }
+  .testimonials #kira-whittle {
+    background: #ffffff; }
+
+@media (min-width: 600px) {
+  .testimonials {
+    grid-template-areas: "one one " "two three" "four four" "five five"; }
+    .testimonials #daniel-clifford {
+      grid-area: one; }
+    .testimonials #jonathan-walters {
+      grid-area: two; }
+    .testimonials #jeanette-harmon {
+      grid-area: three; }
+    .testimonials #patrick-abrams {
+      grid-area: four; }
+    .testimonials #kira-whittle {
+      grid-area: five; } }
+
+@media (min-width: 800px) {
+  .testimonials {
+    grid-template-areas: "one one two" "three four four" "five five five"; }
+    .testimonials #daniel-clifford {
+      grid-area: one; }
+    .testimonials #jonathan-walters {
+      grid-area: two; }
+    .testimonials #jeanette-harmon {
+      grid-area: three; }
+    .testimonials #patrick-abrams {
+      grid-area: four; }
+    .testimonials #kira-whittle {
+      grid-area: five; } }
+
+@media (min-width: 1000px) {
+  .testimonials {
+    grid-template-areas: "one one two five" "three four four five"; }
+    .testimonials #daniel-clifford {
+      grid-area: one; }
+    .testimonials #jonathan-walters {
+      grid-area: two; }
+    .testimonials #jeanette-harmon {
+      grid-area: three; }
+    .testimonials #patrick-abrams {
+      grid-area: four; }
+    .testimonials #kira-whittle {
+      grid-area: five; } }
